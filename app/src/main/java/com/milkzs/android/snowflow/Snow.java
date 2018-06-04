@@ -4,7 +4,7 @@ public class Snow {
 
     private int snow_x;
     private int snow_y;
-    private int speed;
+    private int speed = 30;
 
     private Snow() {
     }
@@ -25,6 +25,18 @@ public class Snow {
 
     public int getSpeed() {
         return speed;
+    }
+
+    public void setSnow_x(int snow_x) {
+        this.snow_x = snow_x;
+    }
+
+    public void setSnow_y(int snow_y) {
+        this.snow_y = snow_y;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     public static class Builder {
